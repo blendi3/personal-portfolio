@@ -12,7 +12,7 @@ const About = () => {
     <section className="section " id="about" ref={ref}>
       <div className="container mx-auto">
         <div
-          className="flex flex-col gap-y-10 lg:flex-row
+          className="flex flex-col gap-y-10 text-center lg:text-left lg:flex-row
         lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen"
         >
           <motion.div
@@ -20,7 +20,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            className="flex-1 hidden lg:flex bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
           ></motion.div>
           <motion.div
             variants={fadeIn("left", 0.3)}
@@ -31,7 +31,7 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">
-              I'm a Frontend developer with over 2 years of experience
+              I'm a Frontend developer with over 6 months of experience
             </h3>
             <p className="mb-6">
               As a front-end developer, I am passionate about creating
@@ -44,10 +44,10 @@ const About = () => {
               and football. Connect with me to see how I can bring my skills to
               your next project.
             </p>
-            <div className="flex gap-x-6 lg:gap-x-10 mb-12">
+            <div className="flex justify-center lg:justify-start gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={2} /> : null}
+                  {inView ? <CountUp start={0} end={3} duration={2} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Certifications <br />
@@ -65,7 +65,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={100} duration={2} /> : null}
+                  {inView ? <CountUp start={0} end={20} duration={2} /> : null}
                   +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
@@ -74,7 +74,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-8 items-center">
+            <div className="flex gap-x-8 items-center justify-center lg:justify-start">
               <a
                 href="https://www.linkedin.com/in/blendi-ivanja-214586250/"
                 target="_blank"

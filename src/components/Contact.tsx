@@ -12,7 +12,7 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-start items-center"
+            className="flex-1 flex lg:justify-start items-center text-center justify-center lg:text-left"
           >
             <div>
               <h4
