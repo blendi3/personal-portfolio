@@ -25,7 +25,8 @@ module.exports = {
       },
       backgroundImage: {
         site: "linear-gradient(to right, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42))",
-        about: "url('./assets/about.png')",
+        about: "url('./assets/aboutme.png')",
+        services: "url('./assets/myWork.png')"
       },
     },
   },

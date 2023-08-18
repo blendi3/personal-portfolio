@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 import Img1 from "../assets/ContactList.jpg";
-import Img2 from "../assets/stopwatch.jpg";
+import Img2 from "../assets/os-project.png";
 import Img3 from "../assets/ToDoList.jpg";
 
 const Work = () => {
@@ -80,13 +80,13 @@ const Work = () => {
                 className="absolute -bottom-full left-12 group-hover:bottom-24
               transition-all duration-500 z-50"
               >
-                <span className="text-gradient">Javascript</span>
+                <span className="text-gradient">React.js</span>
               </div>
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-16
               transition-all duration-700 z-50"
               >
-                <a href="https://github.com/blendi3/Stopwatch-Clock" target="_blank"><span className="text-3xl text-white">Stopwatch</span></a>
+                <a href="https://github.com/blendi3/os-project" target="_blank"><span className="text-3xl text-white">os-project</span></a>
               </div>
             </div>
             <div
