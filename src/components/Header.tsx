@@ -4,7 +4,7 @@ import Logo from "../assets/logo.svg";
 
 const Header = () => {
   return (
-    <header className=" py-8">
+    <header className="py-8 sticky top-0 z-[1000000]" style={{ background: "linear-gradient(to right, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42))" }}>
       <div className="container mx-auto ">
         <div className="flex justify-between items-center">
           <a href="#">
