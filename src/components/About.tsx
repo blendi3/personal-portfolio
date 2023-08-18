@@ -8,6 +8,13 @@ const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
+
+  const handleResumeDownload = () => {
+    // Replace 'your-google-drive-link' with the actual Google Drive shareable link
+    const resumeUrl = 'https://drive.google.com/file/d/1aV1wO_AcKhpS9wZLXyKQb2b2V9ApwaPA/view?usp=sharing';
+    window.open(resumeUrl, '_blank');
+  };
+
   return (
     <section className="section " id="about" ref={ref}>
       <div className="container mx-auto">
@@ -81,9 +88,9 @@ const About = () => {
               >
                 <button className="btn btn-lg">Contact me</button>
               </a>
-              <a href="#" className="text-gradient btn-link">
+              <button className="text-gradient btn-link" onClick={handleResumeDownload}>
                 My Portfolio
-              </a>
+              </button>
             </div>
           </motion.div>
         </div>
