@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className='bg-site bg-no-repeat bg-cover'>
       <Header />
-      <div className='overflow-x-hidden'>
+      <div className='overflow-hidden'>
       <Banner />
       <Nav />
       <About />
