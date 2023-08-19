@@ -12,12 +12,14 @@ const App = () => {
   return (
     <div className='bg-site bg-no-repeat bg-cover'>
       <Header />
+      <div className='overflow-x-hidden'>
       <Banner />
       <Nav />
       <About />
       <Services />
       <Work />
       <Contact />
+      </div>
       <div className='h-[100px] lg:h-full'></div>
     </div>
   );
