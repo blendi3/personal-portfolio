@@ -11,14 +11,10 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Banner = () => {
-
   const handleResumeDownload = () => {
-    // Replace 'your-google-drive-link' with the actual Google Drive shareable link
-    const resumeUrl = 'https://drive.google.com/file/d/1aV1wO_AcKhpS9wZLXyKQb2b2V9ApwaPA/view?usp=sharing';
-    window.open(resumeUrl, '_blank');
+    const resumeUrl = "/my-resume.pdf";
+    window.open(resumeUrl, "_blank");
   };
-
-
 
   return (
     <section
@@ -72,7 +68,10 @@ const Banner = () => {
               >
                 <button className="btn btn-lg">Contact me</button>
               </a>
-              <button className="text-gradient btn-link" onClick={handleResumeDownload}>
+              <button
+                className="text-gradient btn-link"
+                onClick={handleResumeDownload}
+              >
                 My Portfolio
               </button>
             </motion.div>
@@ -96,7 +95,7 @@ const Banner = () => {
               >
                 <FaLinkedin />
               </a>
-              <a href="">
+              <a href="mailto:blendiivanja2@gmail.com">
                 <FaEnvelope />
               </a>
             </motion.div>

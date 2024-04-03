@@ -7,29 +7,25 @@ const services = [
   {
     name: "Javasript",
     description:
-      "lorem ipsum dolor sut anet conscetetur adiplisiting elit. Maiores, \
-      quia quo epedita accasuamas ilum decimas repellat ",
+      "With a knack for bringing dynamic content to life, I wield JavaScript to create interactive and responsive web applications that engage and perform.",
     link: "learn more",
   },
   {
     name: "React",
     description:
-      "lorem ipsum dolor sut anet conscetetur adiplisiting elit. Maiores, \
-      quia quo epedita accasuamas ilum decimas repellat ",
+      "React is my go-to for building user interfaces with a seamless experience, leveraging its component-based architecture for efficient, scalable apps.",
     link: "learn more",
   },
   {
     name: "Typescript",
     description:
-      "lorem ipsum dolor sut anet conscetetur adiplisiting elit. Maiores, \
-      quia quo epedita accasuamas ilum decimas repellat ",
+      "Enhancing code reliability and maintainability, I harness TypeScript's static typing to produce more robust and error-resistant applications.",
     link: "learn more",
   },
   {
-    name: "Tailwind CSS",
+    name: "GraphQL",
     description:
-      "lorem ipsum dolor sut anet conscetetur adiplisiting elit. Maiores, \
-      quia quo epedita accasuamas ilum decimas repellat ",
+      "I streamline client-server communication with GraphQL, ensuring that data fetching is precise and efficient, tailored exactly to what the UI requires.",
     link: "learn more",
   },
 ];

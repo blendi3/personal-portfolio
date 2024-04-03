@@ -10,11 +10,9 @@ const About = () => {
   });
 
   const handleResumeDownload = () => {
-    // Replace 'your-google-drive-link' with the actual Google Drive shareable link
-    const resumeUrl = 'https://drive.google.com/file/d/1aV1wO_AcKhpS9wZLXyKQb2b2V9ApwaPA/view?usp=sharing';
-    window.open(resumeUrl, '_blank');
+    const resumeUrl = "/my-resume.pdf";
+    window.open(resumeUrl, "_blank");
   };
-
   return (
     <section className="section " id="about" ref={ref}>
       <div className="container mx-auto">
@@ -38,18 +36,19 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">
-              I'm a Frontend developer with over 6 months of experience
+              I'm a Frontend developer with over a year of experience
             </h3>
             <p className="mb-6">
               As a front-end developer, I am passionate about creating
               user-friendly and visually appealing web experiences. I have a
               strong understanding of HTML, CSS, and JavaScript and I am
-              proficient in using React, to build dynamic, interactive websites
-              and applications. I am dedicated to staying up to date with the
+              proficient in using React, including Next.js, to build dynamic,
+              interactive websites and applications. Additionally, I have
+              experience with TypeScript to enhance code quality and
+              maintainability. I am dedicated to staying up to date with the
               latest web development trends and technologies, and always strive
               to enhance the user experience. In my free time, I enjoy traveling
-              and football. Connect with me to see how I can bring my skills to
-              your next project.
+              and football.
             </p>
             <div className="flex justify-center lg:justify-start gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -72,8 +71,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={20} duration={2} /> : null}
-                  +
+                  {inView ? <CountUp start={0} end={20} duration={2} /> : null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
@@ -88,7 +86,10 @@ const About = () => {
               >
                 <button className="btn btn-lg">Contact me</button>
               </a>
-              <button className="text-gradient btn-link" onClick={handleResumeDownload}>
+              <button
+                className="text-gradient btn-link"
+                onClick={handleResumeDownload}
+              >
                 My Portfolio
               </button>
             </div>
