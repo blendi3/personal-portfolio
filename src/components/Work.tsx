@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-import ContactList from "../assets/ContactList.jpg";
+import YotubeClone from "../assets/youtubeHomepage.jpg";
 import OsProject from "../assets/os-project.png";
 import taskManagerApp from "../assets/taskManagerApp.jpg";
 
@@ -16,7 +16,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="text-center lg:text-left flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0 justify-center items-center"
+            className="text-center lg:text-left flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0 justify-center items-center px-2"
           >
             <div>
               <h2 className="h2 leading-tight text-accent">
@@ -43,25 +43,27 @@ const Work = () => {
               z-40 transition-all duration-300"
               ></div>
               <img
-                className="transition-transform duration-500 group-hover:scale-125 w-full h-96 object-cover "
-                src={ContactList}
+                className="transition-transform duration-500 group-hover:scale-125 w-full h-96 object-fill"
+                src={YotubeClone}
                 alt=""
               />
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-24
               transition-all duration-500 z-50"
               >
-                <span className="text-gradient">Javascript</span>
+                <span className="text-gradient">React & Typescript</span>
               </div>
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-16
               transition-all duration-700 z-50"
               >
                 <a
-                  href="https://github.com/blendi3/Contact-List"
+                  href="https://github.com/blendi3/youtube-homepage-clone"
                   target="_blank"
                 >
-                  <span className="text-3xl text-white">Contact List</span>
+                  <span className="text-3xl text-white">
+                    Youtube Homepage Clone
+                  </span>
                 </a>
               </div>
             </div>
@@ -71,7 +73,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-10 mt-20"
+            className="flex-1 flex flex-col gap-y-10 mt-20 px-2"
           >
             <div
               className="group relative overflow-hidden border-2
