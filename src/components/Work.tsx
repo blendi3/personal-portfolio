@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 import YotubeClone from "../assets/youtubeHomepage.jpg";
-import OsProject from "../assets/os-project.png";
+import bankingApp from "../assets/banking-thumbnail.svg";
 import taskManagerApp from "../assets/taskManagerApp.jpg";
 
 const Work = () => {
@@ -84,22 +84,31 @@ const Work = () => {
               z-40 transition-all duration-300"
               ></div>
               <img
-                className="transition-transform duration-500 group-hover:scale-125 w-full h-96 object-cover"
-                src={OsProject}
+                className="transition-transform duration-500 group-hover:scale-125 w-full"
+                src={bankingApp}
                 alt=""
               />
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-24
               transition-all duration-500 z-50"
               >
-                <span className="text-gradient">React.js</span>
+                <span className="text-gradient">
+                  Next.js & Typescript (with Authentication)
+                </span>
               </div>
               <div
-                className="absolute -bottom-full left-12 group-hover:bottom-16
-              transition-all duration-700 z-50"
+                className="absolute -bottom-full left-12 group-hover:bottom-5 lg:group-hover:bottom-7
+                transition-all duration-700 z-50"
               >
-                <a href="https://github.com/blendi3/os-project" target="_blank">
-                  <span className="text-3xl text-white">os-project</span>
+                <a href="https://banking-vert-xi.vercel.app/" target="_blank">
+                  <span className="block text-3xl text-white">
+                    Banking App (Deployed)
+                  </span>
+                </a>
+                <a href="https://github.com/blendi3/banking" target="_blank">
+                  <span className="block text-3xl text-white">
+                    Banking App (Github)
+                  </span>
                 </a>
               </div>
             </div>
@@ -121,7 +130,7 @@ const Work = () => {
               transition-all duration-500 z-50"
               >
                 <span className="text-gradient">
-                  React.js & Typescript (with authentication)
+                  React.js & Typescript (with Authentication)
                 </span>
               </div>
               <div
